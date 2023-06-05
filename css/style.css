@@ -1,15 +1,23 @@
-*{
+html {
     text-align: center;
-    background-color: #F6EEE3;
-    font-family: 'Josefin Sans', sans-serif;     /*Sets background color font and text alignment for any HTML document linked to this CSS document*/
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    background-image: url(resources/media/Cherry\ Shrimp\ On\ Wood.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.9;
+    color: #000000;
+    font-weight: bold;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+    margin: 0; /*resets the default margin and allows the body to take up left over flex space*/
+    flex: 1; 
 }
 
-header{
+header {
     position: fixed;
     border: 5px solid #000;
     z-index: 1;
@@ -18,14 +26,23 @@ header{
     box-sizing: border-box;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin-left: 10px;
 }
 
-li a{
+li a {
+    text-decoration: none;   /*Sets the text decorations and color for a elements within the li element*/
     color: #000;
-    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      /*Centers vertically and horizontally calaculates height based on remaing space after subtracting 120px*/
+    height: calc(100% - 120px);
+    width: 75%;
+    margin: auto;
 }
 
 
