@@ -4,9 +4,6 @@ html {
     height: 100%; 
     display: flex; 
     flex-direction: column; 
-    background-image: url(resources/media/Cherry\ Shrimp\ On\ Wood.jpg);
-    background-repeat: repeat;
-    background-size: cover;
     opacity: 0.9;
     color: #000000;
     font-weight: bold;
@@ -15,6 +12,9 @@ html {
 body {
     margin: 0; /*resets the default margin and allows the body to take up left over flex space*/
     flex: 1; 
+    background-image: url(resources/media/Cherry\ Shrimp\ On\ Wood.jpg);
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 header {
@@ -31,7 +31,7 @@ nav li {
     margin-left: 10px;
 }
 
-li a {
+a {
     text-decoration: none;   /*Sets the text decorations and color for a elements within the li element*/
     color: #000;
 }
@@ -45,5 +45,32 @@ section {
     margin: auto;
 }
 
+footer{
+    float: left;
+    border-top: 3px solid #000;
+    width: 100%;                        /*Sets border width color and position for footer*/
+    color: #fff;
+}
 
+footer p{
+    display: inline-block;
+    margin-left: 10px;                     /*Sets the display type and margin*/
+}
 
+footer a{ 
+    color: #fff;            /*Sets the color of text for all a elements within the footer element*/
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 14px; 
+    }
+
+    body {
+        background-size: contain; 
+    }
+
+    section {
+        width: 90%;
+    }
+}
