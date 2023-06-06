@@ -58,22 +58,24 @@ footer {
     box-sizing: border-box;
 }
 
-
 footer p{
     display: inline-block;
     margin-left: 10px;                     /*Sets the display type and margin*/
 }
-    
-/* Media Queries */
+
+section p{
+    line-height: 30px;
+}
+
+    /* Media Queries */
+/*401-600px screens*/
 @media only screen and (max-width: 600px) {
-    /* Adjustments for small screens */
     header, section, footer {
       width: 100%;
     }
   }
-  
+  /*0-400px screen size*/
   @media only screen and (max-width: 400px) {
-    /* Adjustments for extra small screens */
     header, section, footer {
       height: auto;
     }
