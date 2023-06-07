@@ -2,7 +2,7 @@ html {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     height: 100%; 
-    display: flex; 
+    display: flex;                                    
     flex-direction: column; 
     color: #ffffff;
     font-weight: bold;
@@ -22,14 +22,14 @@ header {
     z-index: 1;
     width: 50%;
     height: 120px;
-    box-sizing: border-box;
+    box-sizing: border-box;                           /*Centers the header and make sure that it stays when the user scrolls*/
     background-color: #000000;
     left: 50%;
     transform: translateX(-50%);
 }
 
 nav li {
-    display: inline-block;
+    display: inline-block;          /*Tells all li elements within the nav element to display as an inline block and to have 10px of space to the left of them*/
     margin-left: 10px;
 }
 
@@ -53,7 +53,7 @@ footer {
     border-top: 3px solid #000000;
     width: 50%;
     background-color: #000000;
-    left: 50%;
+    left: 50%;                              /*tells the footer to be positioned in the center of the page*/
     transform: translateX(-50%);
     box-sizing: border-box;
 }
