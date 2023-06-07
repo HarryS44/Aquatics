@@ -42,7 +42,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 100px);
+    flex-direction: column;
+    height: calc(100% - 120px);
     width: 50%;
     margin: auto;
     background-color: #000000;
@@ -83,36 +84,70 @@ figure:hover {
     background-color: #BDBDBD;
     color: #000;
 }
-/*Sets the sizing of all elements for screen sizes with a max width of 600px and 00px*/
-@media only screen and (max-width: 600px) {
-    header {
-        width: 80%;
+
+
+/* Responsive styles for screens with min-width 320px and max-width 480px */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-size: auto;
     }
 
-    section {
-        width: 80%;
-    }
-
+    header,
+    section,
     footer {
-        width: 80%;
+        width: 100%;
     }
 
     img {
-        height: auto;
-        width: 100%;
+        height: 150px;
+        width: 250px;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    header {
-        width: 90%;
+/* Responsive styles for screens with min-width 481px and max-width 768px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-size: auto;
     }
 
-    section {
-        width: 90%;
-    }
-
+    header,
+    section,
     footer {
-        width: 90%;
+        width: 70%;
+    }
+
+    img {
+        height: 175px;
+        width: 300px;
     }
 }
+
+/* Responsive styles for screens with min-width 769px and max-width 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-size: auto;
+    }
+
+    header,
+    section,
+    footer {
+        width: 60%;
+    }
+
+    img {
+        height: 200px;
+        width: 350px;
+    }
+}
+
+/* Responsive styles for screens with min-width 1025px and max-width 1200px */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background-size: auto;
+    }
+
+    header,
+    section,
+    footer {
+        width: 50;
+    } }
