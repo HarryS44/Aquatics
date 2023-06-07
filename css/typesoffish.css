@@ -39,11 +39,13 @@ a {
 }
 /*Centers vertically and horizontally calaculates height based on remaing space after subtracting 120px*/
 section {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: calc(100% - 120px);
+    top: 60px;
     width: 50%;
     margin: auto;
     background-color: #000000;
@@ -77,7 +79,7 @@ img {
 figure {
     background-color: #000;
     color: #fff;
-    transition: backgroun-color 1s linear;
+    transition: background-color 1s linear;
 }
 /*sets the background and text color for when hovering over the figure element*/
 figure:hover {
